@@ -1,0 +1,244 @@
+/* Style the navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar content */
+  overflow: hidden;
+  background-color: #072739; /* Change background color */
+  padding: 10px 20px; /* Adjust padding to make the navbar shorter */
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px; /* Maximum width for the navbar content */
+}
+
+/* Logo image */
+.logo {
+  margin-right: 20px; /* Adjust margin to move the logo to the right */
+  width: 100px;
+  height: auto;
+}
+
+/* Menu section */
+.menu-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown button */
+.dropbtn {
+  color: white;
+  text-align: center;
+  padding: 10px 50px; /* Adjust padding */
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4a6fa5;
+  min-width: 200px;
+  z-index: 1;
+  right: 10%; /* Position the dropdown content to the right */
+  top: 60px; /* Adjust the top position for spacing */
+  font-family: "Oswald", sans-serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 40px 100px; /* Adjust padding for links */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #165f89; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Show the dropdown menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Menu image */
+.menu-image {
+  margin-left: 0px; /* Add space between the menu button and the image */
+  width: 20px; /* Adjust the size of the menu image */
+  height: auto;
+}
+
+/* Video container */
+.video-container {
+  z-index: 0;
+  position: relative; /* Needed to position the overlay and center content */
+  width: 100%; /* Make container full width */
+  max-width: 600px; /* Set a maximum width */
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Hide any overflow */
+}
+
+/* Background video */
+.background-video {
+  width: 100%; /* Make video full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Video overlay */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0; /* Align the overlay with the video */
+  width: 100%; /* Match the width of the video */
+  height: 100%; /* Cover the entire height of the video container */
+  background-color: rgba(22, 95, 137, 0.5); /* Blue color with 50% transparency */
+  display: flex; /* Enable flexbox for centering */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+}
+
+/* Center content */
+.center-content {
+  z-index: 0; /* Ensure the content is above the overlay */
+  display: flex;
+  align-items: center; /* Vertically center items */
+  color: white; /* Set text color */
+  text-align: left; /* Align text to the left */
+  font-family: "Oswald", sans-serif;
+}
+
+.center-content img {
+  max-width: 50%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add space between the image and text */
+}
+
+/* Image container */
+.image-container {
+  position: relative; /* Relative positioning for text */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 0px; /* Add some margin from the previous container */
+  padding: 0 20px; /* Add padding on each side */
+}
+
+.image-container img {
+  width: 100%; /* Make image full width */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Text container */
+.text-container {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the texts */
+  text-align: center; /* Center text */
+  color: white; /* Text color */
+}
+
+.text {
+  margin: 10px 0; /* Margin between texts */
+}
+
+.text1 {
+  font-family: "Archivo Black", Impact, 'Arial Narrow Bold', sans-serif; /* First text font */
+  font-size: 40px; /* First text size */
+}
+
+.text2 {
+  font-family: "Oswald", sans-serif; /* Second text font */
+  font-size: 18px; /* Second text size */
+}
+
+/* Colored rectangle */
+.colored-rectangle {
+  position: relative; /* Position for text container */
+  width: 100%; /* Make it the same width as the images */
+  max-width: 600px; /* Same max-width as the images */
+  height: 300px; /* Adjust the height as needed */
+  background-color: #165f89; /* Choose your desired color */
+  margin: 20px auto; /* Center it and add some margin from the image above */
+}
+
+/* Text container inside colored rectangle */
+.colored-rectangle .text-container {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center the texts */
+  text-align: center; /* Center text */
+  color: white; /* Text color */
+}
+
+.colored-rectangle .text1 {
+  font-family: "Archivo Black", Impact, 'Arial Narrow Bold', sans-serif; /* Font for first text */
+  font-size: 40px; /* Font size for first text */
+}
+
+.colored-rectangle .text2 {
+  font-family: "Oswald", sans-serif; /* Font for second text */
+  font-size: 18px; /* Font size for second text */
+}
+
+/* Full-width rectangle matching the navbar */
+.full-width-rectangle {
+  width: 100%; /* Full width */
+  height: 150px; /* Adjust height as needed */
+  background-color: #072739; /* Choose your desired color */
+  margin-top: 20px; /* Add margin from the previous rectangle */
+  display: flex; /* Use flexbox for layout */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in width and height */
+}
+
+.full-width-whiterectangle {
+  width: 100%; /* Full width */
+  height: auto; /* Adjust height to fit content */
+  background-color: #ffffff; /* Choose your desired color */
+  margin-top: 0px; /* Add margin from the previous rectangle */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Display children vertically */
+  align-items: flex-start; /* Align children to the left */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in width and height */
+}
+
+.image-text-container {
+  display: flex; /* Use flexbox to align image and text horizontally */
+  align-items: center; /* Vertically center the content */
+  margin-bottom: 20px; /* Space between image-text pairs */
+}
+
+.vertical-image {
+  width: 80%; /* Adjust as needed */
+  max-width: 20px; /* Set a maximum width for larger screens */
+  height: 20px; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between image and text */
+}
+
+.image-text {
+  font-family: "Oswald", sans-serif; /* Text font */
+  font-size: 12px; /* Text size */
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+
+

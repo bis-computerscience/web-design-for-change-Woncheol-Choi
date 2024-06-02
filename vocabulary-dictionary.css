@@ -1,0 +1,198 @@
+/* Style the navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navbar content */
+    overflow: hidden;
+    background-color: #ffffff; /* Change background color */
+    padding: 10px 20px; /* Adjust padding to make the navbar shorter */
+    border-bottom: 2px solid grey; /* Add grey border line */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; /* Maximum width for the navbar content */
+}
+
+/* Logo image */
+.logo {
+    margin-right: 20px; /* Adjust margin to move the logo to the right */
+    width: 100px;
+    height: auto;
+}
+
+/* Menu section */
+.menu-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown button */
+.dropbtn {
+    color: white;
+    text-align: center;
+    padding: 10px 50px; /* Adjust padding */
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4a6fa5;
+    min-width: 200px;
+    z-index: 1;
+    right: 10%; /* Position the dropdown content to the right */
+    top: 60px; /* Adjust the top position for spacing */
+    font-family: "Oswald", sans-serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 40px 100px; /* Adjust padding for links */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #165f89; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/* Show the dropdown menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu image */
+.menu-image {
+    margin-left: 0px; /* Add space between the menu button and the image */
+    width: 20px; /* Adjust the size of the menu image */
+    height: auto;
+}
+
+
+
+
+/* Style the button */
+.button-container
+
+
+.btn {
+    background-color: #4a6fa5; /* Button color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.btn:hover {
+    background-color: #165f89; /* Hover color */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+
+/* Text container */
+.text-container {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the texts */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+}
+
+
+/* Colored rectangle */
+.colored-rectangle {
+    position: relative; /* Position for text container */
+    width: 100%; /* Make it the same width as the images */
+    max-width: 600px; /* Same max-width as the images */
+    height: 300px; /* Adjust the height as needed */
+    background-color: #165f89; /* Choose your desired color */
+    margin: 20px auto; /* Center it and add some margin from the image above */
+}
+
+/* Text container inside colored rectangle */
+.colored-rectangle .text-container {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Center the texts */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+}
+
+.colored-rectangle .text1 {
+    font-family: "Archivo Black", Impact, 'Arial Narrow Bold', sans-serif; /* Font for first text */
+    font-size: 40px; /* Font size for first text */
+}
+
+.colored-rectangle .text2 {
+    font-family: "Oswald", sans-serif; /* Font for second text */
+    font-size: 18px; /* Font size for second text */
+}
+
+/* Full-width rectangle matching the navbar */
+.full-width-rectangle {
+    width: 100%; /* Full width */
+    height: 150px; /* Adjust height as needed */
+    background-color: #072739; /* Choose your desired color */
+    margin-top: 20px; /* Add margin from the previous rectangle */
+    display: flex; /* Use flexbox for layout */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.full-width-whiterectangle {
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height to fit content */
+    background-color: #ffffff; /* Choose your desired color */
+    margin-top: 0px; /* Add margin from the previous rectangle */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Display children vertically */
+    align-items: flex-start; /* Align children to the left */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.image-text-container {
+    display: flex; /* Use flexbox to align image and text horizontally */
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 20px; /* Space between image-text pairs */
+}
+
+.vertical-image {
+    width: 80%; /* Adjust as needed */
+    max-width: 20px; /* Set a maximum width for larger screens */
+    height: 20px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add space between image and text */
+}
+
+.image-text {
+    font-family: "Oswald", sans-serif; /* Text font */
+    font-size: 12px; /* Text size */
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+ 
